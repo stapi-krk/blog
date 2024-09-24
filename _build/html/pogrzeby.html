@@ -725,11 +725,11 @@ Pierwszy z nich zawiera liczbę pogrzebów na dany dzień. Drugi dotyczy daty, w
 </div>
 <p>Zauważamy fale covidowe w latach 2020-2022. Widać też niewielką sezonowość dla pełnych lat niecovidowych 2019 i 2023. W okresie zimowym występuje więcej pogrzebów.<br />
 Do podobnych wniosków dochodzimy analizując wykres na całej osi czasu:</p>
-<div class="cell tag_hide-cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell content</span>
-<span class="expanded">Hide code cell content</span>
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="o">/</span><span class="mf">1.618</span><span class="p">))</span>
@@ -755,10 +755,10 @@ Do podobnych wniosków dochodzimy analizując wykres na całej osi czasu:</p>
 </pre></div>
 </div>
 </div>
+</details>
 <div class="cell_output docutils container">
 <img alt="_images/5099a68a21ad19372252b7cdaee279420c4cf2516d786a879bdd090023552461.png" src="_images/5099a68a21ad19372252b7cdaee279420c4cf2516d786a879bdd090023552461.png" />
 </div>
-</details>
 </div>
 </section>
 <section id="histogramy-dla-wieku-i-plci">
@@ -814,19 +814,7 @@ Do podobnych wniosków dochodzimy analizując wykres na całej osi czasu:</p>
 <section id="porownanie-z-populacja-kraju">
 <h3>Porównanie z populacją kraju<a class="headerlink" href="#porownanie-z-populacja-kraju" title="Permalink to this heading">#</a></h3>
 <p>Dodatkowo warto wyliczyć różne statystyki i porównać je z danymi dotyczącymi całego kraju albo skonfrontować je z innymi źródłami odnoszącymi się do Krakowa.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">19_763</span><span class="o">/</span><span class="mi">38_265</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5164771984842546
-</pre></div>
-</div>
-</div>
-</div>
-<p>Sprawdźmy, czy kobiety stanowią taki sam procent grupy jak w populacji. Dla całej Polski na kobietę przypada średnio 0.94 mężczyzny, co przekłada się na 51.65% społeczeństwa <a class="reference external" href="https://wikipedia.org">źródło</a>. W moich danych doliczam się 20273 kobiet na 39010 wpisów. Niestety mogłem nie odfiltrować wszystkich niepoprawnych przypadków i metoda podziału ze względu na płeć nie sprawdza się dla zagranicznych imion. Korzystając z testu binomialnego w bibliotece <em>scipy</em> wyliczam p-wartość, która wynosi 0.21. To oznacza, że przy poziomie istotności 0.05 nie ma podstaw do odrzucenia hipotezy zerowej. Zatem upraszczając - pogrzebowa próbka danych ma ten sam udział procentowy kobiet co w populacji Polski.<br />
+<p>Sprawdźmy, czy kobiety stanowią taki sam procent grupy jak w populacji. Dla całej Polski na kobietę przypada średnio 0.94 mężczyzny, co przekłada się na 51.65% społeczeństwa <a class="reference external" href="https://wikipedia.org">źródło</a>. W moich danych doliczam się 20273 kobiet na 39010 wpisów. Niestety mogłem nie odfiltrować wszystkich niepoprawnych przypadków i metoda podziału ze względu na płeć nie sprawdza się dla zagranicznych imion. Korzystając z testu binomialnego w bibliotece <em>scipy</em> wyliczam p-wartość, która wynosi 0.21. To oznacza, że przy poziomie istotności 0.05 nie ma podstaw do odrzucenia hipotezy zerowej. Zatem upraszczając - pogrzebowa próbka danych ma ten sam udział procentowy kobiet co populacja Polski.<br />
 Nb. fakt, że kobiety żyją dłużej nie wpływa na tę statystykę.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -848,7 +836,7 @@ Nb. fakt, że kobiety żyją dłużej nie wpływa na tę statystykę.</p>
 </section>
 <section id="podsumowanie">
 <h2>Podsumowanie<a class="headerlink" href="#podsumowanie" title="Permalink to this heading">#</a></h2>
-<p>Przedstawiłem szczegółową analizę pogrzebów w Krakowie. Wykonałem sporo technicznej pracy, aby przygotować dane i wykresy, które ilustrują różne aspekty tego zagadnienia. Porównałem również wyniki z danymi dotyczącymi populacji całego kraju. Oczywiście można jeszcze sporo pracy wykonać, <a class="reference external" href="http://m.in">m.in</a>. dopracować model uśredniania czy przeprowadzić dogłębniejszą analizę histogramów i statystyk.</p>
+<p>Przedstawiłem szczegółową analizę pogrzebów w Krakowie. Wykonałem sporo technicznej pracy, aby przygotować dane i wykresy, które ilustrują różne aspekty tego zagadnienia. Porównałem również wyniki z danymi dotyczącymi populacji całego kraju. Oczywiście można jeszcze sporo pracy wykonać, m. in. dopracować model uśredniania czy przeprowadzić dogłębniejszą analizę histogramów i statystyk.</p>
 </section>
 </section>
 
